@@ -37,6 +37,6 @@ instance/
 .webassets-cache
 
 # Virtual Environment
-venv/
+fresh_venv/
 env/
 ENV/
