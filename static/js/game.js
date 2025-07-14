@@ -3,6 +3,14 @@ import { initRenderer, resizeCanvas, drawGame, drawMinimap, updateLeaderboard } 
 import { updatePlayer, updateAI, initEntities, handlePlayerSplit } from './entities.js';
 import { handleFoodCollisions, handlePlayerAICollisions, handleAIAICollisions, respawnEntities } from './collisions.js';
 import { initUI } from './ui.js';
+import { WORLD_SIZE, MIN_SPLIT_SCORE, MAX_PLAYER_CELLS } from './config.js';
+
+// Expose game state and config to window for E2E testing
+window.gameState = gameState;
+window.mouse = mouse;
+window.WORLD_SIZE = WORLD_SIZE;
+window.MIN_SPLIT_SCORE = MIN_SPLIT_SCORE;
+window.MAX_PLAYER_CELLS = MAX_PLAYER_CELLS;
 
 function setupInputHandlers() {
     const canvas = document.getElementById('gameCanvas');

@@ -1,9 +1,9 @@
-import { splitPlayerCell, handlePlayerSplit, updatePlayer } from '../entities.js';
-import { gameState, mouse } from '../gameState.js';
-import { MIN_SPLIT_SCORE, MAX_PLAYER_CELLS } from '../config.js';
+import { splitPlayerCell, handlePlayerSplit, updatePlayer } from '../../entities.js';
+import { gameState, mouse } from '../../gameState.js';
+import { MIN_SPLIT_SCORE, MAX_PLAYER_CELLS } from '../../config.js';
 
 // Mock gameState and mouse
-jest.mock('../gameState.js', () => ({
+jest.mock('../../gameState.js', () => ({
   gameState: {
     playerCells: []
   },

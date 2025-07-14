@@ -1,4 +1,4 @@
-import { getSize, getDistance, calculateCenterOfMass } from '../utils.js';
+import { getSize, getDistance, calculateCenterOfMass } from '../../utils.js';
 
 describe('getSize', () => {
   test('returns correct size for score 0', () => {
