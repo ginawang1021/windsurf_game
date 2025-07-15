@@ -1,0 +1,1 @@
+generate a E2E test in @__tests__/e2e directory that uses Selenium. Test for mouse tracking, player cell position updates, and boundary constraints
