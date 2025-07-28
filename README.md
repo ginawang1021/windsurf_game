@@ -1,5 +1,7 @@
 # Windsurf Demo App
 
+A simple Agar.io clone game for testing and demonstration purposes.
+
 ## Prerequisite
 
 - Repository cloned
