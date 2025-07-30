@@ -27,3 +27,11 @@ export const COLORS = {
         OTHER: 'rgba(255, 255, 255, 0.3)'
     }
 };
+
+export const BACKGROUND_COLORS = {
+    DEFAULT: { bg: '#f0f0f0', canvas: 'white', name: 'Default' },
+    BLUE: { bg: '#e3f2fd', canvas: '#bbdefb', name: 'Blue' },
+    GREEN: { bg: '#e8f5e8', canvas: '#c8e6c9', name: 'Green' },
+    PURPLE: { bg: '#f3e5f5', canvas: '#e1bee7', name: 'Purple' },
+    DARK: { bg: '#1a1a1a', canvas: '#2d2d2d', name: 'Dark' }
+};

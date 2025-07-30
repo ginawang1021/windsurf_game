@@ -13,6 +13,26 @@
             --canvas-color: #2d2d2d;
         }
 
+        :root[data-bg-theme="blue"] {
+            --bg-color: #e3f2fd;
+            --canvas-color: #bbdefb;
+        }
+
+        :root[data-bg-theme="green"] {
+            --bg-color: #e8f5e8;
+            --canvas-color: #c8e6c9;
+        }
+
+        :root[data-bg-theme="purple"] {
+            --bg-color: #f3e5f5;
+            --canvas-color: #e1bee7;
+        }
+
+        :root[data-bg-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --canvas-color: #2d2d2d;
+        }
+
         body {
             margin: 0;
             overflow: hidden;
@@ -241,6 +261,16 @@
                     <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
                     <span class="toggle-slider"></span>
                 </label>
+            </div>
+            <div class="control-item">
+                <span>Background Color</span>
+                <select id="background-color-select" style="background-color: #4CAF50; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;">
+                    <option value="default">Default</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="dark">Dark</option>
+                </select>
             </div>
         </div>
         <div class="control-group">
