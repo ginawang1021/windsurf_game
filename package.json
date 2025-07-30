@@ -5,11 +5,15 @@
   "main": "app.py",
   "scripts": {
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:e2e": "cd e2e-tests && npx playwright test",
+    "test:e2e:ui": "cd e2e-tests && npx playwright test --ui",
+    "test:e2e:headed": "cd e2e-tests && npx playwright test --headed"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
+    "@playwright/test": "^1.54.1",
     "babel-jest": "^29.7.0",
     "eslint": "^8.57.1",
     "eslint-plugin-security": "^3.0.1",
@@ -31,6 +35,10 @@
       "!static/js/__tests__/**"
     ],
     "coverageDirectory": "coverage",
-    "coverageReporters": ["text", "lcov", "html"]
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ]
   }
 }
